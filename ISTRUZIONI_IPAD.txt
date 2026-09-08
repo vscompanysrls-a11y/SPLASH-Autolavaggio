@@ -1,0 +1,31 @@
+SPLASH AUTOLAVAGGIO — APP PER IPAD
+
+Questa è una web app installabile sulla Home dell'iPad.
+
+INSTALLAZIONE (consigliata)
+1. Pubblica questa cartella su un normale servizio web HTTPS (es. il tuo hosting).
+2. Apri l'indirizzo con Safari sull'iPad.
+3. Premi Condividi → Aggiungi alla schermata Home.
+4. Avvia SPLASH dalla nuova icona.
+
+DATI
+- I dati vengono salvati localmente nel browser dell'iPad tramite LocalStorage.
+- Se cancelli i dati di Safari o rimuovi i dati del sito, lo storico locale può essere perso.
+- Per uso aziendale importante è consigliato aggiungere in seguito un backup/sincronizzazione cloud.
+
+PIN
+- PIN iniziale: 1234
+- In questa prima versione il PIN serve per proteggere lo storico.
+- Se vuoi, nella prossima versione possiamo aggiungere una voce "Cambia PIN" nello storico.
+
+FUNZIONI INCLUSE
+- Citycar, Medium, SUV, SUV Oversize, Moto, Scooter, Furgone, Furgone XL
+- Tipi di lavaggio per ogni mezzo
+- Prezzi modificabili dalla sezione Storico → Prezzi
+- Trattamenti con descrizione e importo libero
+- Uscite con descrizione e importo libero
+- Storico giornaliero
+- Archivio delle giornate pregresse
+- Riepilogo mensile
+- Conteggi e incassi
+- Installazione come web app/PWA su iPad
