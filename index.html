@@ -274,7 +274,8 @@ function renderPrices(){
 function savePrices(){document.querySelectorAll("#priceRows input").forEach(i=>prices[i.dataset.v][i.dataset.s]=parseFloat(i.value)||0);localStorage.setItem("splash_prices",JSON.stringify(prices));alert("Prezzi salvati.");openPrices()}
 function resetPrices(){if(confirm("Ripristinare i prezzi iniziali?")){prices=JSON.parse(JSON.stringify(defaultPrices));localStorage.setItem("splash_prices",JSON.stringify(prices));renderPrices()}}
 
-function openBackup(){document.getElementById("backupInfo").textContent=`Registrazioni salvate: ${getData().length}`;show("backup")}\nfunction changePin(){const old=prompt("PIN attuale");if(old!==pin){alert("PIN attuale non corretto.");return}const n=prompt("Nuovo PIN a 4 cifre");if(!/^\\d{4}$/.test(n)){alert("Il PIN deve contenere 4 cifre.");return}pin=n;localStorage.setItem("splash_pin",pin);alert("PIN modificato.")}
+function openBackup(){document.getElementById("backupInfo").textContent=`Registrazioni salvate: ${getData().length}`;show("backup")}
+function changePin(){const old=prompt("PIN attuale");if(old!==pin){alert("PIN attuale non corretto.");return}const n=prompt("Nuovo PIN a 4 cifre");if(!/^\\d{4}$/.test(n)){alert("Il PIN deve contenere 4 cifre.");return}pin=n;localStorage.setItem("splash_pin",pin);alert("PIN modificato.")}
 function exportBackup(){
   const payload={app:"SPLASH Autolavaggio",version:1,exportedAt:new Date().toISOString(),pin,prices,data:getData()};
   const blob=new Blob([JSON.stringify(payload,null,2)],{type:"application/json"});
